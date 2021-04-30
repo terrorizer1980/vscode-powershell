@@ -21,4 +21,3 @@ tools/**
 .vsts-ci/**
 build.ps1
 tsconfig.json
-tslint.json
