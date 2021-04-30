@@ -75,7 +75,7 @@ function showInner(
             if (index >= 0) {
                 toggleSelection(items[index]);
             } else {
-                // tslint:disable-next-line:no-console
+                // eslint-disable-next-line no-console
                 console.log(`Couldn't find CheckboxQuickPickItem for label '${selection.label}'`);
             }
 

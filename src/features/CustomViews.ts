@@ -74,7 +74,7 @@ class PowerShellContentProvider implements vscode.TextDocumentContentProvider {
     private viewIndex: { [id: string]: CustomView } = {};
     private didChangeEvent: vscode.EventEmitter<vscode.Uri> = new vscode.EventEmitter<vscode.Uri>();
 
-    // tslint:disable-next-line:member-ordering
+    // eslint-disable-next-line @typescript-eslint/member-ordering
     public onDidChange: vscode.Event<vscode.Uri> = this.didChangeEvent.event;
 
     public provideTextDocumentContent(uri: vscode.Uri): string {

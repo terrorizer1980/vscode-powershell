@@ -187,7 +187,7 @@ export class Logger implements ILogger {
                 timestampedMessage + os.EOL,
                 (err) => {
                     if (err) {
-                        // tslint:disable-next-line:no-console
+                        // eslint-disable-next-line no-console
                         console.log(`Error writing to vscode-powershell log file: ${err}`);
                     }
                 });

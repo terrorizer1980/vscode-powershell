@@ -5,7 +5,7 @@ import * as path from "path";
 
 import { runTests } from "vscode-test";
 
-// tslint:disable-next-line: no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const PackageJSON: any = require("../../package.json");
 const testExtensionId = `${PackageJSON.publisher}.${PackageJSON.name}`;
 
@@ -31,9 +31,9 @@ async function main() {
             version: "insiders"
         });
     } catch (err) {
-        // tslint:disable-next-line:no-console
+        // eslint-disable-next-line no-console
         console.error(err);
-        // tslint:disable-next-line:no-console
+        // eslint-disable-next-line no-console
         console.error("Failed to run tests");
         process.exit(1);
     }

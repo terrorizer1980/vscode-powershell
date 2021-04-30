@@ -776,7 +776,7 @@ class SessionMenuItem implements vscode.QuickPickItem {
 
     constructor(
         public readonly label: string,
-        // tslint:disable-next-line:no-empty
+        // eslint-disable-next-line no-empty, @typescript-eslint/no-empty-function
         public readonly callback: () => void = () => {}) {
     }
 }

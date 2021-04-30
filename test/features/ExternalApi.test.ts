@@ -6,7 +6,7 @@ import * as vscode from "vscode";
 import { before, beforeEach, afterEach } from "mocha";
 import { IExternalPowerShellDetails, IPowerShellExtensionClient } from "../../src/features/ExternalApi";
 
-// tslint:disable-next-line: no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const PackageJSON: any = require("../../../package.json");
 const testExtensionId = `${PackageJSON.publisher}.${PackageJSON.name}`;
 
